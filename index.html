@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Basic Video Player</title>
+
+		<!-- Custom style sheet below -->
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<!-- Link to Font Awesome style sheet below -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<!-- Link to JavaScript file below -->
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<div id="smplVideoPlayer">
+			<h1>Basic Video Player</h1>
+
+			<div id="videoContainer">
+				<video id="myVideo" poster="thumbnail.jpg">
+				<source src="cavalese.m4v">
+				Your browser does not support the video file format. Please update the browser.
+				</video>
+			</div>
+
+			<div id="streamContainer">
+				<div id="streamBar">
+				</div>
+			</div>
+
+			<div id="controlsContainer">
+				<i id="playButton" class="fa fa-play fa-3x"></i>
+
+				<div id="duration">
+					00:00 / 00:00
+				</div>
+
+				<i id="volumeButton" class="fa fa-volume-up fa-3x"></i>
+
+				<div id="volumeContainer">
+					<div id="volumeBar">
+					</div>
+				</div>
+
+				<i id="fullscreenButton" class="fa fa-arrows-alt fa-3x"></i>
+			</div>
+			<div>
+				<p id="status">Press play to start the video.</p>
+			</div>
+		</div>
+	</body>
+</html>
